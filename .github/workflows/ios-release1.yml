@@ -20,7 +20,7 @@ jobs:
       - name: Setup Flutter Environment
         run: |
           flutter clean
-          flutter pub get 
+          flutter pub upgrade
           
        # 清除 Xcode 缓存
       - name: Clean Xcode Cache
