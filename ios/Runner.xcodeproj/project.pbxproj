@@ -308,10 +308,10 @@
 				DEVELOPMENT_TEAM = N3YK37UY32;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 798RL7J5U7;
 				ENABLE_BITCODE = NO;
-				FLUTTER_APPLICATION_PATH = /Users/runner/work/day/day;
+				FLUTTER_APPLICATION_PATH = /Users/runner/work/test123/test123;
 				FLUTTER_BUILD_NUMBER = 2;
-				FLUTTER_ROOT = /Users/hemming/Flutter/flutter;
-				FLUTTER_TARGET = /Users/hemming/Documents/Work/WorkGit/day;
+				FLUTTER_ROOT = "/Users/runner/hostedtoolcache/flutter/3.24.4-stable/arm64";
+				FLUTTER_TARGET = lib/main.dart;
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,10 +454,10 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 798RL7J5U7;
 				ENABLE_BITCODE = NO;
-				FLUTTER_APPLICATION_PATH = /Users/runner/work/day/day;
+				FLUTTER_APPLICATION_PATH = /Users/runner/work/test123/test123;
 				FLUTTER_BUILD_NUMBER = 2;
-				FLUTTER_ROOT = /Users/hemming/Flutter/flutter;
-				FLUTTER_TARGET = /Users/hemming/Documents/Work/WorkGit/day;
+				FLUTTER_ROOT = "/Users/runner/hostedtoolcache/flutter/3.24.4-stable/arm64";
+				FLUTTER_TARGET = lib/main.dart;
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -491,10 +491,10 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 798RL7J5U7;
 				ENABLE_BITCODE = NO;
-				FLUTTER_APPLICATION_PATH = /Users/runner/work/day/day;
+				FLUTTER_APPLICATION_PATH = /Users/runner/work/test123/test123;
 				FLUTTER_BUILD_NUMBER = 2;
-				FLUTTER_ROOT = /Users/hemming/Flutter/flutter;
-				FLUTTER_TARGET = /Users/hemming/Documents/Work/WorkGit/day;
+				FLUTTER_ROOT = "/Users/runner/hostedtoolcache/flutter/3.24.4-stable/arm64";
+				FLUTTER_TARGET = lib/main.dart;
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
