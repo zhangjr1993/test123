@@ -30,31 +30,33 @@ jobs:
           rm -rf ~/Library/Developer/Xcode/Archives
           rm -rf ~/Library/Developer/Xcode/Products
       # 设置 CocoaPods
-      - name: Setup CocoaPods
-        run: |
-          cd ios
-          rm -rf Pods
-          rm -f Podfile.lock
-          pod install --repo-update
+      # - name: Setup CocoaPods
+      #   run: |
+      #     cd ios
+      #     rm -rf Pods
+      #     rm -f Podfile.lock
+      #     pod install --repo-update
           
-      - name: Print Environment Info
+      # 添加详细的环境信息调试步骤
+      # - name: Print Environment Info
+      #   run: |
+      #     echo "============= Environment Variables ============="
+      #     echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
+      #     FLUTTER_ROOT=$(which flutter | xargs dirname | xargs dirname)
+      #     echo "FLUTTER_ROOT: $FLUTTER_ROOT"
+      #     echo "FLUTTER_APPLICATION_PATH: $GITHUB_WORKSPACE"
+      #     echo "Current Directory: $(pwd)"
+      # 打印 Xcode 版本信息
+      - name: Print Xcode Version
         run: |
-          echo "============= Environment Variables ============="
-          echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
-          FLUTTER_ROOT=$(which flutter | xargs dirname | xargs dirname)
-          echo "FLUTTER_ROOT: $FLUTTER_ROOT"
-          echo "FLUTTER_APPLICATION_PATH: $GITHUB_WORKSPACE"
-          echo "Current Directory: $(pwd)"
-
+          xcodebuild -version
+          echo "Xcode Path: $(xcode-select -p)"
+          swift --version
+          
       - uses: cedvdb/action-flutter-build-ios@v1
         with:
           build-cmd: |
-            flutter clean
-            flutter pub get
-            cd ios
-            pod install
-            cd ..
-            flutter build ipa --release --export-options-plist=ios/ExportOptions.plist --no-tree-shake-icons
+            flutter build ipa --release --export-options-plist=ios/ExportOptions.plist --no-tree-shake-icons --verbose
           certificate-base64: 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
 
           certificate-password: 123456
